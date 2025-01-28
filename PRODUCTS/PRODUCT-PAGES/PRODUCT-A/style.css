@@ -385,6 +385,26 @@ body{
       margin-right: auto;
     }
 
+    .description{
+      display: grid;
+      gap: 6px;
+      .title2{
+        font-size: 14px;
+
+        font-family: "Inter", serif;
+        color: #191919;
+        font-weight: 400;
+      }
+
+      .details{
+        font-size: 12px;
+
+        font-family: "Inter", serif;
+        color: #6c6c6c;
+        font-weight: 400;
+      }
+    }
+
     .text-container2{
       width: 100%;
       display: flex;
