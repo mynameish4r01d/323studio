@@ -34,7 +34,7 @@ body{
   .show {
     opacity: 1;
     filter: blur(0px);
-    transform: translateX(0%);
+    transform: translateY(0%);
   }
   
   .logo:nth-child(1) {
@@ -79,6 +79,7 @@ body{
     position: fixed;
     width: 100%;
     height: 70px;
+    z-index: 3;
     background-color: #fffdff;
     justify-content: center;
     align-items: center;
@@ -102,6 +103,8 @@ body{
   .bottom-nav-bar{
     width: 100%;
     height: 90px;
+    z-index: 3;
+
     background-color: #fffdff;
     position: fixed;
     bottom: 0;
@@ -176,5 +179,198 @@ body{
                 }
             }
         }
+    }
+  }
+
+  .spacer{
+    height: 100px;
+  }
+
+
+  .content{
+    width: 85%;
+    margin-bottom: 108px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .text-container{
+      margin-top: 160px;
+      display: grid;
+      gap: 16px;
+  
+      .title{
+        font-family: "Inter", serif;
+        text-align: center;
+        font-size: 35px;
+        font-weight: 700;
+  
+      }    
+      
+      .details{
+        font-family: "Inter", serif;
+        text-align: center;
+        font-size: 12px;
+        color: #6A686B;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+    }
+
+    .divider{
+      background-color: #D9D9D9;
+      height: 1px;
+      width: 100%;
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+
+    .dynamic-box{
+      width: 100%;
+      height: auto;
+      background-color: #FFFDFF;
+      border-radius: 24px;
+      padding-bottom: 16px;
+      padding-top: 16px;
+
+      .flex-box{
+        display: flex;
+        justify-content: space-between;
+        .title{
+          font-family: "Inter", serif;
+          font-size: 12px;
+          font-weight: 700;
+          padding-left: 16px;
+          padding-right: 16px;
+    
+        }  
+      }
+      
+      .flex-box-btns{
+        height: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 16px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 10px;
+        justify-content: center;
+
+        .btn{
+          width: 100%;
+          height: auto;
+          border-radius: 16px;
+          background-color: #E8E8E8;
+          transition: 0.20s;
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          gap: 2px;
+
+          .material-symbols-rounded{
+            color: #191919;
+            font-size: 20px;
+            margin-left: auto;
+            margin-right: auto;
+
+            font-variation-settings:
+            'FILL' 1,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+          }
+
+          .details{
+            font-family: "Inter", serif;
+            color: #191919;
+            font-size: 10px;
+            text-align: center;
+          }
+        }
+
+        .btn:hover{
+          transform: scale(1.1);
+          background-color: #191919;
+
+          .material-symbols-rounded{
+            color: #E8E8E8;
+          }
+
+          .details{
+            color: #E8E8E8;
+
+          }
+        }
+      }
+
+      .container{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding-top: 24px;
+        gap: 16px;
+
+        .material-symbols-rounded{
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 80px;
+          color: #FFC628;
+          text-align: center;
+          width: 100%;
+          border-radius: 16px;
+
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+
+        .title2{
+          font-family: "Inter", serif;
+          color: #191919;
+          font-size: 16px;
+          font-weight: 800;
+          text-align: center;
+        }
+      }
+
+      .btn-container{
+        padding-left: 16px;
+        padding-right: 16px;
+        transition: 0.20s;
+        height: auto;
+        margin-top: 40px;
+
+        .odr-btn{
+          background-color: #191919;
+          border-radius:16px;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          padding: 12px;
+          margin-top: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          transition: 0.20s;
+  
+          .title{
+            font-family: "Inter", serif;
+            color: #E8E8E8;
+            text-align: center;
+            font-size: 12px;
+  
+          }
+        }
+
+        .odr-btn:hover{
+          padding: 24px;
+          transform: scale(0.8);
+        }
+      }
     }
   }
