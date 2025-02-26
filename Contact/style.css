@@ -293,8 +293,8 @@ body{
         }
 
         .btn:hover{
-          transform: scale(1.1);
-          background-color: #191919;
+          background-color: #4e4e4e;
+          transform: scale(0.95);
 
           .material-symbols-rounded{
             color: #E8E8E8;
@@ -368,8 +368,8 @@ body{
         }
 
         .odr-btn:hover{
-          padding: 24px;
-          transform: scale(0.8);
+          background-color: #4e4e4e;
+          transform: scale(0.95);
         }
       }
     }
