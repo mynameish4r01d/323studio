@@ -101,69 +101,10 @@ body{
     
   }
 
-
-    .order-now-bar{
-    width: 100%;
-    height: 160px;
-    z-index: 2;
-    background-color: #e8e8e873;
-    backdrop-filter: blur(16px);
-
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-
-    .odr-btn{
-      margin-top: 13px;
-      width: 91%;
-      height: 46px;
-      background-color: #191919;
-      border-radius: 100px;
-      margin-left: auto;
-      margin-right: auto;
-      display: flex;
-      transition: 0.20s;
-      gap: 10px;
-      justify-content: center;
-      align-items: center;
-
-      .material-symbols-rounded{
-        color: #e8e8e8;
-        transition: 0.10s;
-      }
-
-      .title{
-        font-size: 12px;
-        font-family: "Inter", serif;
-        color: #e8e8e8;
-        font-weight: 700;
-        transition: 0.10s;
-
-      }
-    }
-    .odr-btn:hover{
-      width: 100%;
-      height: 70px;
-      margin-top: 0px;
-      border-radius: 0px;
-
-      .material-symbols-rounded{
-        transform: scale(1.1);
-      }
-
-      .title{
-        transform: scale(1.1);
-      }
-    }
-  }
-
   .order-now-bar{
     width: 100%;
     height: 180px;
     z-index: 2;
-    background-color: #880e0e00;
-    backdrop-filter: blur(0px);
 
     position: fixed;
     bottom: 0;
@@ -200,10 +141,9 @@ body{
       }
     }
     .odr-btn:hover{
-      width: 100%;
-      height: 90px;
-      margin-top: 0px;
-      border-radius: 0px;
+      width: 130px;
+      height: 50px;
+      transform: scale(0.9);
       background-color: #000000;
 
       .material-symbols-rounded{
